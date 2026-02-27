@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{category.title}} :: {{block.super}}
+{% endblock %}
+
+{% block sidebar %}
+    <div class="col-md-4">
+        <div class="list-group" style="max-width: 25rem; margin: 10px; margin-inline: 0;">
+            {%for item in categories%}
+                <a href="{% url 'category' item.pk %}" class="list-group-item list-group-item-action">
+                    {{item.title}}
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<section class = "cards">
+    {% for item in news %}
+    <div class="card border-success" style="max-width: 25rem;">
+        <div class="card-header text-success">
+            {{forloop.counter}}
+            {{item.just_a_little_trolling}}
+            <a href="{% url 'category' item.category.pk %}">{{item.category}}</a>
+        </div>
+
+        <div class="card-body text-success">
+            {% if item.photo %}
+            <img src="{{item.photo.url}}" class="card-img top" alt="...">
+            {% else %}
+            <img src="https://i.ibb.co/fYzs5N34/empty.jpg" class="card-img top" alt="...">
+            {% endif %}
+            <h5 class="card-title text-truncate {%cycle 'text-danger' 'text-success'%}">{{item.title}}</h5>
+            <p class="card-text text-truncate">{{item.content}}</p>
+            <a href="#" class="btn btn-success d-grid gap-2">Читать полностью</a>
+        </div>
+
+        <div class="card-footer text-body-secondary">
+            {{item.created_at|date:"Y-m-d H:i:s"}}
+        </div>
+    </div>
+    {% endfor %}
+    </section>
+{% endblock %}
+
