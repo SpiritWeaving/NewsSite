@@ -5,78 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2141d80e-18b5-4b8c-ac3d-6d2e8bdeab6a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/NewsSite.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/MySite/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/MySite/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/MySite/media/eighth_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/MySite/media/eleventh_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/MySite/media/empty.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/MySite/media/fifth_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/MySite/media/first_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/MySite/media/fourth_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/MySite/media/galaxy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/MySite/media/ninth_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/MySite/media/second_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/MySite/media/seventh_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/MySite/media/sixth_news.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/MySite/media/squirrel_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/MySite/media/tenth_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/MySite/media/third_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/MySite/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/MySite/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/MySite/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/eighth_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/eleventh_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/empty.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/fifth_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/first_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/fourth_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/galaxy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/ninth_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/photos/2026/02/14/eighth_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/photos/2026/02/14/eleventh_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/photos/2026/02/14/fifth_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/photos/2026/02/14/first_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/photos/2026/02/14/fourth_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/photos/2026/02/14/galaxy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/photos/2026/02/14/ninth_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/photos/2026/02/14/second_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/photos/2026/02/14/seventh_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/photos/2026/02/14/sixth_news.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/photos/2026/02/14/squirrel_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/photos/2026/02/14/tenth_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/photos/2026/02/14/third_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/photos/2026/02/27/watcher.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/second_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/seventh_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/sixth_news.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/squirrel_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/tenth_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/third_news.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/media/watcher.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/news/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/news/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/news/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/news/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/news/migrations/0002_alter_news_options_alter_news_content_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/news/migrations/0003_category_news_category.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/news/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/news/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/news/templates/news/category.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/news/templates/news/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/news/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/news/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/news/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySite/templates/inc/_nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/news/templates/news/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/news/templates/news/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/news/templates/news/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/news/templates/news/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,16 +34,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\D\Code\Python\WEB\NewsSite\MySite" />
