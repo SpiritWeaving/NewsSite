@@ -5,10 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2141d80e-18b5-4b8c-ac3d-6d2e8bdeab6a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/MySite/MySite/static/css/base-template.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySite/news/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySite/news/templates/news/add_news.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySite/news/templates/news/breadcrumb.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySite/news/templates/news/list_categories.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySite/news/templates/news/redirect_test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySite/news/templates/news/view_news.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySite/news/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySite/news/templatetags/news_tags.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySite/templates/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySite/templates/inc/_sidebar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/MySite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/MySite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/MySite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/MySite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/news/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MySite/news/templates/news/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/news/templates/news/category.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MySite/news/templates/news/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/news/templates/news/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/news/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/news/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MySite/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/templates/inc/_nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/templates/inc/_nav.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,15 +59,22 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+    &quot;git-widget-placeholder&quot;: &quot;sidebar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/D/Code/Python/WEB/NewsSite/MySite/static&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\D\Code\Python\WEB\NewsSite\MySite\static" />
+      <recent name="C:\D\Code\Python\WEB\NewsSite\MySite\MySite\static" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\D\Code\Python\WEB\NewsSite\MySite" />
-      <recent name="C:\D\Code\Python\WEB\NewsSite\MySite\news\templates\news" />
       <recent name="C:\D\Code\Python\WEB\NewsSite\MySite\news" />
-      <recent name="C:\D\Code\Python\WEB\NewsSite\MySite\MySite" />
+      <recent name="C:\D\Code\Python\WEB\NewsSite\MySite\MySite\static\css" />
+      <recent name="C:\D\Code\Python\WEB\NewsSite\MySite\static\admin\css" />
+      <recent name="C:\D\Code\Python\WEB\NewsSite\MySite\MySite\static" />
+      <recent name="C:\D\Code\Python\WEB\NewsSite\MySite\MySite\static\bootstrap\css" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -68,5 +93,16 @@
       <updated>1770992456832</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

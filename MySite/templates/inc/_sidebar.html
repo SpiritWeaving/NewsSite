@@ -1,0 +1,13 @@
+{% load news_tags %}
+<div class="col-md-4">
+    <div class="list-group" style="max-width: 25rem; margin-inline: 0;">
+        {% get_list_categories as categories %}
+        {%for item in categories%}
+        <a href="{{ item.get_absolute_url }}" class="list-group-item list-group-item-action">
+            {{item.title}}
+        </a>
+        {% endfor %}
+    </div>
+</div>
+<br>
+{% show_categories %}

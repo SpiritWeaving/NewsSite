@@ -1,0 +1,52 @@
+<nav class="breadcrumb">
+    <ul class="breadcrumb-list">
+        {% for crumb in breadcrumbs %}
+        <li class="breadcrumb-list-item">
+            {% if forloop.last %}
+                <a class="breadcrumb-link link-active" href="{{ crumb.url }}">
+                    {{ crumb.title }}
+                </a>
+            {% else %}
+                <a class="breadcrumb-link" href="{{ crumb.url }}">
+                    {{ crumb.title }}
+                </a>
+                <span class="separator">
+                    >
+                </span>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
+
+<style>
+    .breadcrumb-list{
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    .breadcrumb-list-item{
+        display: flex;
+        gap: 15px;
+    }
+
+    .breadcrumb-link{
+        display: inline-block;
+        max-width: 15em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-decoration: none;
+        padding-bottom: 2px;
+        color: currentColor;
+        border-bottom: 1px currentColor solid;
+        font-weight: 600;
+    }
+
+    .link-active{
+        color: green;
+    }
+</style>

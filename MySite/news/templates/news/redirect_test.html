@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Тестовая форма
+{% endblock %}
+
+{% block sidebar %}
+    {% include 'inc/_sidebar.html' %}
+{% endblock %}
+
+{% block content %}
+    <form method="post"> <!-- action="" можно не писать, если шлем на тот же URL -->
+        {% csrf_token %}
+
+        <div class="mb-3">
+            <label for="exampleInputEmail" class="form-label">Адрес электронной почты</label>
+            <input type="email" class="form-control" id="exampleInputEmail" name="email"
+            placeholder="{{ form.email.help_text }}">
+            <div id="emailHelp" class="form-text">
+                Мы никогда никому не передадим вашу электронную почту (но это не точно).
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputName" class="form-label">Имя</label>
+            <input type="text" class="form-control" id="exampleInputName" name="name">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Подписаться на рассылку</button>
+    </form>
+{% endblock %}

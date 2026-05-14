@@ -1,0 +1,43 @@
+.row{
+     margin-block-end: 30px;
+}
+
+.card{
+     overflow: hidden;
+     width: 100%;
+     padding: 0;
+     border: 2px, dotted, currentColor;
+}
+
+.card:not(.card:nth-last-child()){
+     margin-bottom: 20px;
+}
+
+.card-img{
+     width: 50%;
+     height: 250px;
+     object-fit: cover;
+}
+
+.card-description{
+     width: 50%;
+}
+
+.card-body{
+     display: flex;
+     gap: 30px;
+}
+
+.card-text{
+     overflow: hidden;
+     display: -webkit-box;
+     -webkit-box-orient: vertical;
+     -webkit-line-clamp: 5; /* Number of lines to show */
+     line-clamp: 5; /* Standard property for modern browsers */
+}
+
+.cards{
+     display: flex;
+     gap: 20px;
+     flex-direction: column;
+}

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load news_tags %}
+
+{% block title %}
+    {{news_item.title}} :: {{block.super}}
+{% endblock %}
+
+{% block sidebar %}
+    {% include 'inc/_sidebar.html' %}
+{% endblock %}
+
+{% block content %}
+<section class = "cards">
+    <div class="card border-secondary">
+        <div class="card-header text-secondary">
+            {{news_item.just_a_little_trolling}}
+            <a href="{{ news_item.category.get_absolute_url }}">
+                {{news_item.category}}
+            </a>
+            {% show_breadcrumbs news_item %}
+        </div>
+
+        <div class="card-body">
+            {% if news_item.photo %}
+            <img src="{{news_item.photo.url}}" class="card-img top" alt="..." style="height: 210px;"/>
+            {% else %}
+            <img src="https://i.ibb.co/fYzs5N34/empty.jpg" class="card-img top" alt="..." style="height: 210px;">
+            {% endif %}
+
+            <div class="card-description">
+            <h5 class="card-title {%cycle 'text-danger' 'text-success'%}">{{news_item.title}}</h5>
+            <p class="card-text" style="display: block">{{news_item.content}}</p>
+            </div>
+        </div>
+
+        <div class="card-footer text-secondary">
+            {{news_item.created_at|date:"Y-m-d H:i:s"}}
+        </div>
+    </div>
+    </section>
+{% endblock %}

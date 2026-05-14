@@ -5,15 +5,7 @@
 {% endblock %}
 
 {% block sidebar %}
-    <div class="col-md-4">
-        <div class="list-group" style="max-width: 25rem; margin-inline: 0;">
-            {%for item in categories%}
-                <a href="{% url 'category' item.pk %}" class="list-group-item list-group-item-action">
-                    {{item.title}}
-                </a>
-            {% endfor %}
-        </div>
-    </div>
+    {% include 'inc/_sidebar.html' %}
 {% endblock %}
 
 {% block content %}
@@ -22,8 +14,8 @@
     <div class="card border-secondary">
         <div class="card-header text-secondary">
             {{forloop.counter}}
-            {{item.just_a_little_trolling}}
-            <a href="{% url 'category' item.category.pk %}">{{item.category}}</a>
+            {{item.author}}
+            <a href="{{ item.category.get_absolute_url }}">{{item.category}}</a>
         </div>
 
         <div class="card-body">
@@ -36,7 +28,7 @@
             <div class="card-description">
             <h5 class="card-title {%cycle 'text-danger' 'text-success'%}">{{item.title}}</h5>
             <p class="card-text">{{item.content}}</p>
-            <a href="#" class="btn btn-secondary d-grid gap-2">Читать полностью</a>
+            <a href="{{item.get_absolute_url}}" class="btn btn-secondary d-grid gap-2">Читать полностью</a>
             </div>
         </div>
 
