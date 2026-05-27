@@ -9,9 +9,8 @@
 {% endblock %}
 
 {% block content %}
-    <form method="post"> <!-- action="" можно не писать, если шлем на тот же URL -->
+    <form method="post">
         {% csrf_token %}
-
         <div class="mb-3">
             <label for="exampleInputEmail" class="form-label">Адрес электронной почты</label>
             <input type="email" class="form-control" id="exampleInputEmail" name="email"

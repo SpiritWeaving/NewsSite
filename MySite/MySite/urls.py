@@ -7,6 +7,7 @@ from news.views import*
 # urls.py
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('accounts/', include('django.contrib.auth.urls')),
     path('news/', include('news.urls'), name='news_view'),
     path("__reload__/", include("django_browser_reload.urls")),
 ]

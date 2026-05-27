@@ -3,9 +3,9 @@ from .models import News, Category
 
 # Register your models here.
 class NewsAdmin(admin.ModelAdmin):
-    list_display = ('id', 'category', 'title', 'created_at', 'updated_at', 'is_published')
+    list_display = ('id', 'slug', 'category', 'author', 'title', 'created_at', 'updated_at', 'is_published')
     list_display_links = ('title', 'id')
-    search_fields = ('title', 'content', 'category__title')
+    search_fields = ('title', 'content', 'category__title', 'author')
     list_editable = ('is_published',)
     list_filter = ('is_published', 'category')
 

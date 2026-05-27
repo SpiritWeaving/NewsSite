@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    {{category.title}} :: {{block.super}}
+    {{title}} :: {{block.super}}
 {% endblock %}
 
 {% block sidebar %}
@@ -14,7 +14,11 @@
     <div class="card border-secondary">
         <div class="card-header text-secondary">
             {{forloop.counter}}
-            {{item.just_a_little_trolling}}
+            {% if item.author %}
+                <span>{{item.author}}</span>
+            {% else %}
+                <span>Unknown</span>
+            {% endif %}
             <a href="{{ item.category.get_absolute_url }}">{{item.category}}</a>
         </div>
 
@@ -26,7 +30,7 @@
             {% endif %}
 
             <div class="card-description">
-            <h5 class="card-title {%cycle 'text-danger' 'text-success'%}">{{item.title}}</h5>
+            <h5 class="card-title {%cycle 'text-warning' 'text-success'%}">{{item.title}}</h5>
             <p class="card-text">{{item.content}}</p>
             <a href="{{item.get_absolute_url}}" class="btn btn-primary d-grid gap-2">Читать полностью</a>
             </div>
@@ -38,5 +42,21 @@
     </div>
     {% endfor %}
     </section>
+    {% if page_obj.has_other_pages %}
+    <nav class="list-pages mt-3">
+        <ul class="pagination">
+            {% for p in paginator.page_range %}
+            {% if page_obj.number == p %}
+            <li class="page-item">
+                <a class="page-link text-secondary">{{ p }}</a>
+            </li>
+            {% else %}
+            <li class="page-item">
+                <a href="?page={{ p }}" class="page-link">{{ p }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
+    {% endif %}
 {% endblock %}
-

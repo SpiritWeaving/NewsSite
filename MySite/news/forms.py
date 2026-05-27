@@ -13,10 +13,15 @@ class NewsForm(forms.ModelForm):
     # category = forms.ModelChoiceField(queryset=Category.objects.all(),
     #                                   empty_label="Выберите категорию", label="Категория",
     #                                   widget=forms.Select(attrs={"class":"form-control"}))
+    category = forms.ModelChoiceField(
+        queryset=Category.objects.all(),
+        label="Категория",
+        empty_label="Не выбрано (опционально)",
+    )
     class Meta:
         model = News
         # fields = '__all__'
-        fields = ['title', 'content', 'author', 'photo', 'is_published', 'category']
+        fields = ['title', 'content', 'photo', 'author', 'is_published', 'category']
         widgets = {
             'title': forms.TextInput(attrs={"class":"form-control"}),
             'content': forms.Textarea(attrs={"class":"form-control", "rows":5}),
@@ -32,10 +37,10 @@ class NewsForm(forms.ModelForm):
         return title
 
     def clean_author(self):
-        author = self.cleaned_data['author']
-        if len(author) < 2:
-            raise ValidationError("Имя автора слишком короткое")
-        return author
+         author = self.cleaned_data['author']
+         if len(author) < 2:
+             raise ValidationError("Имя автора слишком короткое")
+         return author
 
 class SubscriptionForm(forms.Form):
     email = forms.EmailField(label="Адрес электронной почты",
