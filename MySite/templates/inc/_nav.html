@@ -9,8 +9,15 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Главная</a>
                 </li>
+                {% if request.user.is_authenticated %}
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{% url 'add_news' %}">Добавить новость</a>
+                </li>
+                {% endif %}
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'test' %}">
+                        Тестовая страница (попугайчики)
+                    </a>
                 </li>
             </ul>
         </div>

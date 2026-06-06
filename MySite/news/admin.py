@@ -1,5 +1,9 @@
 from django.contrib import admin
-from .models import News, Category
+from .models import News, Category, User
+
+class UserAdmin(admin.ModelAdmin):
+    list_display = ('id', 'username', 'email', )
+    list_display_links = ('id', 'username')
 
 # Register your models here.
 class NewsAdmin(admin.ModelAdmin):
@@ -14,5 +18,6 @@ class CategoryAdmin(admin.ModelAdmin):
     list_display_links = ('title', 'id')
     search_fields = ('title',)
 
+admin.site.register(User, UserAdmin)
 admin.site.register(News, NewsAdmin)
 admin.site.register(Category, CategoryAdmin)

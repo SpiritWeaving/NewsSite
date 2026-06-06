@@ -1,7 +1,31 @@
 from django import forms
-from news.models import News, Category
+from news.models import News, Category, User
 import re
+from django.contrib.auth import get_user_model
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.core.exceptions import ValidationError
+
+User = get_user_model()
+
+class RegisterForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+    class Meta:
+        model = User
+        fields = ['username', 'email', 'password1', 'password2', 'avatar']
+        widgets = {
+            'avatar': forms.FileInput(attrs={"class": "form-control"}),
+        }
+
+class LoginForm(AuthenticationForm):
+    # Кастомизация полей
+    username = forms.CharField(widget=forms.TextInput(attrs={
+        'class': 'form-control',
+        'placeholder': 'Введите имя пользователя'
+    }), label="Имя пользователя:")
+    password = forms.CharField(widget=forms.PasswordInput(attrs={
+        'class': 'form-control',
+        'placeholder': 'Введите пароль'
+    }), label="Пароль:")
 
 class NewsForm(forms.ModelForm):
     # title = forms.CharField(max_length=150, label="Название",

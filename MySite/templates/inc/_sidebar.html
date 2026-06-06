@@ -3,8 +3,17 @@
     <div class="list-group" style="max-width: 25rem; margin-inline: 0;">
         {% get_list_categories as categories %}
         {%for item in categories%}
-        <a href="{{ item.get_absolute_url }}" class="list-group-item list-group-item-action">
+        <a href="{{ item.get_absolute_url }}"
+           class="list-group-item list-group-item-action"
+            style="display: flex; gap: 4px; flex-wrap: wrap;">
             {{item.title}}
+            <div class="bg-primary rounded-circle
+            d-flex align-items-center justify-content-center"
+                 style="width: 25px; height: 25px;">
+                  <span class="text-white">
+                    {% get_category_amount item %}
+                  </span>
+            </div>
         </a>
         {% endfor %}
     </div>

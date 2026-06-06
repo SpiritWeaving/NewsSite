@@ -5,19 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2141d80e-18b5-4b8c-ac3d-6d2e8bdeab6a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MySite/news/templates/news/home_news_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySite/MySite/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySite/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySite/news/templates/news/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySite/news/templates/registration/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySite/news/templates/registration/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySite/news/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/MySite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/MySite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/MySite/static/css/base-template.css" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/MySite/static/css/base-template.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MySite/MySite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/MySite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/media/categories/784312c8a97dd855ee82c819d8b055b4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/media/categories/cinnamon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/media/categories/nature.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/media/categories/nature_e7dhO4x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/media/categories/ori.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/media/categories/space.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/media/cinnamon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/media/eleventh_news.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/media/galaxy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/media/ori.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/media/space.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/media/watcher.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MySite/news/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/news/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MySite/news/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/news/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/news/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/news/migrations/0002_alter_news_options_alter_news_content_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/news/migrations/0003_category_news_category.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/news/migrations/0004_alter_news_options_category_description_and_more.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MySite/news/migrations/0005_news_author.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/news/migrations/0006_news_slug.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/news/migrations/0007_alter_news_slug.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MySite/news/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/news/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySite/news/templates/news/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/news/templates/news/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySite/news/templates/news/list_categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/news/templates/news/list_categories.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySite/news/templates/news/redirect_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/news/templates/news/redirect_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/news/templates/news/home_news_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/news/templates/news/home_news_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/news/templatetags/news_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/news/templatetags/news_tags.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MySite/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/news/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MySite/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/news/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/static/css/base-template.css" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/static/css/base-template.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MySite/templates/inc/_nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/templates/inc/_nav.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MySite/templates/inc/_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/MySite/templates/inc/_sidebar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,29 +71,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "sidebar",
-    "last_opened_file_path": "C:/D/Code/Python/WEB/NewsSite/MySite/static",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;sidebar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/D/Code/Python/WEB/NewsSite/MySite/static&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\D\Code\Python\WEB\NewsSite\MySite\static" />
       <recent name="C:\D\Code\Python\WEB\NewsSite\MySite\MySite\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\D\Code\Python\WEB\NewsSite\MySite\MySite" />
+      <recent name="C:\D\Code\Python\WEB\NewsSite\MySite\MySite\config" />
+      <recent name="C:\D\Code\Python\WEB\NewsSite\MySite\news\templates\registration" />
       <recent name="C:\D\Code\Python\WEB\NewsSite\MySite\news" />
       <recent name="C:\D\Code\Python\WEB\NewsSite\MySite\MySite\static\css" />
-      <recent name="C:\D\Code\Python\WEB\NewsSite\MySite\static\admin\css" />
-      <recent name="C:\D\Code\Python\WEB\NewsSite\MySite\MySite\static" />
-      <recent name="C:\D\Code\Python\WEB\NewsSite\MySite\MySite\static\bootstrap\css" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -87,8 +114,18 @@
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="40c69190-c188-4f14-bb8f-95576ccc8a6d" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="40c69190-c188-4f14-bb8f-95576ccc8a6d">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />

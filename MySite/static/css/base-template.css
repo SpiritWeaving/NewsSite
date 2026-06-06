@@ -15,17 +15,24 @@
 
 .card-img{
      width: 50%;
-     height: 250px;
+     height: 100%;
      object-fit: cover;
 }
 
 .card-description{
      width: 50%;
+     position: relative;
+     height: 100%;
 }
 
 .card-body{
      display: flex;
      gap: 30px;
+}
+
+.card-button{
+    position: absolute;
+    bottom: 0px;
 }
 
 .card-text{

@@ -13,7 +13,7 @@ import os
 from pathlib import Path
 
 
-from django.conf.global_settings import STATICFILES_DIRS
+from django.conf.global_settings import STATICFILES_DIRS, INTERNAL_IPS
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -40,12 +40,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'debug_toolbar',
+    'ckeditor',
     'news.apps.NewsConfig',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     # 'whitenoise.middleware.WhiteNoiseMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -134,4 +137,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL= '/media/'
 
+# IP адрес для debug toolbar
+INTERNAL_IPS = ["127.0.0.1"]
 
+AUTH_USER_MODEL = 'news.User'
+LOGIN_REDIRECT_URL = 'home'
+# Перенаправление после выхода
+LOGOUT_REDIRECT_URL = 'login'
+
+LOGIN_URL = 'login'
+# По этому пути будут загружаться изображения
+CKEDITOR_UPLOAD_PATH = "uploads/"

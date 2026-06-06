@@ -5,6 +5,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Динамический Description -->
+    <meta name="description"
+          content="{% block meta_description %}Стандартное описание сайта{% endblock %}"/>
+    <!-- Динамический Keywords -->
+    <meta name="keywords"
+          content="{% block meta_keywords %}Ключевые слова, по умолчанию{% endblock %}"/>
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/base-template.css' %}" />
     <title>{% block title %}Новости{% endblock %}</title>
@@ -19,6 +25,31 @@
                 {% endblock %}
             </div>
             <div class="col-md-9">
+                <!-- Проверка авторизован ли пользователь -->
+                {% if user.is_authenticated %}
+                    <div class="alert alert-success" style="display: flex; align-items: center;
+                        gap: 20px;">
+                        <img src="http://127.0.0.1:8000/media/{{user.avatar}}"
+                             alt="Аватар"
+                             style="border-radius: 50%;
+                            width: 70px; height: 70px; object-fit: cover;
+                            object-position: center;"
+                        />
+                        <h4>{{ user.username }}</h4>
+                        <!-- Форма для выхода -->
+                        <form method="post" action="{% url 'logout' %}" style="display: inline;">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-primary">
+                                Выйти
+                            </button>
+                        </form>
+                    </div>
+                {% else %}
+                    <div class="alert alert-info">
+                        <a class="btn btn-primary" href="{% url 'login' %}">Войдите</a> или
+                        <a class="btn btn-primary" href="{% url 'register' %}">зарегистрируйтесь</a>
+                    </div>
+                {% endif %}
                 {% block content %}
                     CONTENT
                 {% endblock %}

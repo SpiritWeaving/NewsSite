@@ -1,6 +1,6 @@
 from django import template
 from django.shortcuts import reverse
-from news.models import Category
+from news.models import Category, News
 
 register = template.Library()
 
@@ -8,9 +8,17 @@ register = template.Library()
 def get_categories():
     return Category.objects.all()
 
+@register.simple_tag(name='get_category_amount')
+def get_category_amount(category):
+    return category.news.count()
+
 @register.inclusion_tag('news/list_categories.html')
 def show_categories(arg1="Последние", arg2="Новости"):
-    categories = Category.objects.all()
+    latest_three = list(News.objects.all())[:5]
+    categories = []
+    for item in latest_three:
+        categories.append(item.category)
+    # categories = Category.objects.all()
     return {'categories' : categories, 'arg1': arg1, 'arg2':arg2}
 
 @register.inclusion_tag('news/breadcrumb.html')
